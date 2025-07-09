@@ -19,24 +19,6 @@
    python3 reassemble_dataset_binary.py
    ```
 
-#### If you're contributing and need to split a large dataset:
-1. Place your large `dataset.csv` in `asteriod/data/`
-2. Navigate to the `scripts` directory
-3. Run the splitting script:
-   ```bash
-   # On Windows (PowerShell/Command Prompt)
-   cd scripts
-   python split_dataset_binary.py
-   # Or double-click split_dataset.bat
-   
-   # On Unix/Linux/Mac
-   cd scripts
-   python3 split_dataset_binary.py
-   ```
-
-#### Files created by splitting:
-- `asteriod/data/chunks/dataset_part_001.csv` through `dataset_part_010.csv`
-
 Each chunk file includes the CSV header and a portion of the data, making them independently usable for analysis if needed.
 
 ### Requirements
@@ -65,12 +47,3 @@ logistic-regression/
 └── scripts/
     └── reassemble_dataset_binary.py # Reassemble chunks into original file (binary-safe)
 ```
-
-## Getting Started
-
-1. Clone this repository
-2. Reassemble the dataset (see instructions above)
-3. Install required Python packages for logistic regression:
-   ```bash
-   pip install pandas numpy scikit-learn matplotlib seaborn
-   ```
