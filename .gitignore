@@ -1,0 +1,31 @@
+# Large dataset files
+asteriod/data/dataset.csv
+asteriod/data/dataset_reassembled*.csv
+asteriod/data/dataset_*.csv
+!asteriod/data/chunks/dataset_part_*.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log

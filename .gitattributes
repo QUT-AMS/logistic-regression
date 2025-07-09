@@ -1,0 +1,19 @@
+# Prevent Git from modifying line endings in dataset files
+# This ensures the binary integrity of split CSV chunks
+asteriod/data/chunks/*.csv binary
+asteriod/data/dataset*.csv binary
+
+# Standard text file handling for other files
+*.md text
+*.py text
+*.bat text eol=crlf
+*.sh text eol=lf
+*.txt text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
