@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-### Dataset Structure
+# Dataset Structure Outline
 
 This repository contains 4 different datasets for logistic regression projects:
 
@@ -31,7 +30,6 @@ This repository contains 4 different datasets for logistic regression projects:
 If you're cloning this repository, you'll need to reassemble the split datasets:
 =======
 ### Working with the Datasets
->>>>>>> 0dbe8e9799b8d83782b641cfbaff699c4c346196
 
 1. Navigate to the `scripts` directory
 2. Run the reassembly script:
@@ -46,7 +44,6 @@ If you're cloning this repository, you'll need to reassemble the split datasets:
    python3 reassemble_dataset_binary.py
    ```
 
-<<<<<<< HEAD
 This will create:
 - `asteriod/data/dataset.csv` from the chunks in `asteriod/data/chunks/`
 - `fakeNewsDetection/data/dataset.csv` from the chunks in `fakeNewsDetection/data/chunks/`
@@ -75,8 +72,6 @@ These datasets are already complete and can be used directly:
 - For asteroid dataset: `asteriod/data/chunks/dataset_part_001.csv` through `dataset_part_022.csv`
 - For fake news dataset: `fakeNewsDetection/data/chunks/dataset_part_001.csv` through `dataset_part_002.csv`
 
-=======
->>>>>>> 0dbe8e9799b8d83782b641cfbaff699c4c346196
 Each chunk file includes the CSV header and a portion of the data, making them independently usable for analysis if needed.
 
 ### Requirements
@@ -97,7 +92,6 @@ logistic-regression/
 ├── .gitattributes
 ├── asteriod/
 │   └── data/
-<<<<<<< HEAD
 │       └── chunks/              # Split dataset chunks (22 files)
 │           ├── dataset_part_001.csv
 │           ├── dataset_part_002.csv
@@ -114,18 +108,15 @@ logistic-regression/
 ├── heartDiseasePrediction/
 │   └── data/
 │       └── dataset.csv          # Complete dataset (ready to use)
-=======
 │       └── chunks/              # Split dataset chunks
 │           ├── dataset_part_001.csv
 │           ├── dataset_part_002.csv
 │           ├── ...
 │           └── dataset_part_***.csv
->>>>>>> 0dbe8e9799b8d83782b641cfbaff699c4c346196
 └── scripts/
     ├── reassemble_dataset_binary.py # Reassemble chunks into original files
     └── split_dataset_binary.py      # Split large datasets into chunks
 ```
-<<<<<<< HEAD
 
 ## Getting Started
 
@@ -138,5 +129,3 @@ logistic-regression/
    ```bash
    pip install pandas numpy scikit-learn matplotlib seaborn
    ```
-=======
->>>>>>> 0dbe8e9799b8d83782b641cfbaff699c4c346196
